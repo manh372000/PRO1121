@@ -38,7 +38,7 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/truyencuoi" />
+                        android:src="@drawable/ngontinh" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -120,7 +120,7 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/truyencuoi" />
+                    android:src="@drawable/truyenma" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -154,7 +154,7 @@
                 <ImageView
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/truyencuoi" />
+                    android:src="@drawable/trinhtham" />
 
                 <TextView
                     android:layout_width="wrap_content"
