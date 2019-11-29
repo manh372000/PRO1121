@@ -15,15 +15,16 @@
         android:src="@drawable/xinchao" />
 
     <EditText
-        android:id="@+id/edUserName"
+        android:id="@+id/edtUserName"
         android:layout_width="385dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="50dp"
-        android:hint="Tên đăng nhập" />
+        android:hint="Tên đăng nhập"
+        />
 
     <EditText
-        android:id="@+id/edPassword"
+        android:id="@+id/edtPassword"
         android:layout_width="383dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"

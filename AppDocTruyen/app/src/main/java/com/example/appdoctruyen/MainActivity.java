@@ -19,6 +19,7 @@ import com.example.appdoctruyen.adapter.TruyenTranhAdapter;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+
     GridView gdvDStruyen;
     TruyenTranhAdapter adapter;
     ArrayList<TruyenTranh> TruyenTranhArrayList;
