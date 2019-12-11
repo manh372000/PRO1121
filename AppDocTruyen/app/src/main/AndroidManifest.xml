@@ -11,10 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".YeuThichActivity"></activity>
+        <activity android:name=".DocTruyenActivity"></activity>
+        <activity android:name=".ChapActivity" />
+        <activity android:name=".YeuThichActivity" />
         <activity android:name=".TheLoaiActivity" />
-        <activity android:name=".DangKyActivity" />
-        <activity android:name=".LoginActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".WelcomeActivity">
             <intent-filter>

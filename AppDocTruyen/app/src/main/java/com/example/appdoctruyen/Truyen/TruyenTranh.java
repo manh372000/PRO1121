@@ -3,9 +3,10 @@ package com.example.appdoctruyen.Truyen;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.Serializable;
 import java.util.jar.JarException;
 
-public class TruyenTranh {
+public class TruyenTranh implements Serializable {
     private String tenTruyen, tenChap,LinkAnh;
     /*
     {

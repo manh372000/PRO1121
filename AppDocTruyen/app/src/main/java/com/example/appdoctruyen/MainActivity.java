@@ -3,12 +3,14 @@ package com.example.appdoctruyen;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.Toast;
@@ -72,6 +74,18 @@ EditText edtTimKiem;
             adapter.sortTruyen(s1);
         }
     });
+        gdvDStruyen.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long id) {
+                TruyenTranh truyenTranh = TruyenTranhArrayList.get(i);
+                Bundle b = new Bundle();
+                b.putSerializable("truyen",truyenTranh);
+                Intent intent = new Intent(MainActivity.this,ChapActivity.class);
+                intent.putExtra("data",b);
+                startActivity(intent);
+            }
+        });
+
     }
 
     @Override
@@ -81,30 +95,6 @@ EditText edtTimKiem;
         return  super.onCreateOptionsMenu(menu);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        switch (item.getItemId()){
-            case R.id.iYeuThich:
-
-                startActivity(new Intent(this, YeuThichActivity.class));
-                break;
-
-            case R.id.iTheLoai:
-                startActivity(new Intent(this, TheLoaiActivity.class));
-                break;
-
-
-            case R.id.iDangXuat:
-                startActivity(new Intent(this, LoginActivity.class));
-                break;
-
-
-                default:
-                    return super.onOptionsItemSelected(item);
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
     @Override
     public void batDau() {
@@ -136,5 +126,11 @@ EditText edtTimKiem;
 
     public void update(View view) {
         new ApiLayTruyen(this).execute();
+    }
+
+    public void TheLoai(View view) {
+        startActivity(new Intent(this, TheLoaiActivity.class));
+
+
     }
 }

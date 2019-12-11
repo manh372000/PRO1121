@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:title="Yêu thích"
-        android:id="@+id/iYeuThich"
-        />
 
-    <item android:title="Thể Loại"
-        android:id="@+id/iTheLoai"
-        />
-    <item android:title="Đăng xuất"
-        android:id="@+id/iDangXuat"
-        />
 
 </menu>
